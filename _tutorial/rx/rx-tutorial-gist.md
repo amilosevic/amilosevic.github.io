@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 order: 100
+title: Rx Gist Sample
 ---
 
 # Gist sampler
