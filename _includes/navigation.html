@@ -1,0 +1,16 @@
+{% assign chapters = site.tutorial | sort: 'order' %}
+
+
+{% for rx in chapters %}
+  {% if rx.url == page.url %}
+    {% assign prev = forloop.index0 | minus: 1 %}	
+    {% assign curr = forloop.index0 %}
+    {% assign next = forloop.index0 | plus: 1 %}
+  {% endif %} 	   
+{% endfor %}
+
+<div style="font-size: 80%">
+{% if next < chapters.size %}  <div style="float: right"><a href="{{base}}{{chapters[next].url}}">{{chapters[next].title}}</a> &gt;</div> {% endif %}
+{% if prev >= 0 %} <div style="float: left">&lt; <a href="{{base}}{{chapters[prev].url}}">{{chapters[prev].title}}</a></div> {% endif %} 
+<div style="clear:both"></div>
+</div>
