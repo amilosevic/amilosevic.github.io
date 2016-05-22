@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<script src="http://rsvpjs-builds.s3.amazonaws.com/rsvp-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.async.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.binding.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.time.js"></script>
+<script src="./rx.morse.js"></script>
+
+<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+</style>
+
+<h1>Rx Morse</h1>
+
+<div id="frame" style="width: 780px; background-color: lightblue; padding: 10px;">
+    <!-- display -->
+    <div style="float: left; width: 250px; margin-right: 10px">
+
+            <div id="pad-container">
+                <div id="pad" style="background-color: lavender; height: 250px; ">
+
+                </div>
+            </div>
+
+            <div id="ticker-container">
+                <p id="ticker" style=""></p>
+            </div>
+
+    </div>
+
+    <div style="float: left; width: 500px; background-color: white">
+
+        <div id="image-container" style="padding: 10px;">
+            <a title="James Kanjo at the English language Wikipedia [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons"
+               href="https://commons.wikimedia.org/wiki/File%3AInternational_Morse_Code.PNG"><img alt="International Morse Code"
+                     src="https://upload.wikimedia.org/wikipedia/commons/1/1f/International_Morse_Code.PNG"/></a>
+        </div>
+
+    </div>
+
+    <div style="clear: both; width: 760px; padding-bottom: 10px"></div>
+
+    <!-- control -->
+
+    <div style="width: 600px; float: left; margin-right: 10px">
+        <input id="text" style="display: block; width: 100%; "/>
+    </div>
+
+    <div style="width: 150px; float: left;">
+        <button id="button" style="display: block; width: 100%;">Send SOS!</button>
+    </div>
+
+    <div style="clear: both;  width: 760px;"></div>
+
+</div>
+
+
+<audio id="speaker" src="./wavTones.com.unregistred.sin_500Hz_-20dBFS_3s.wav"></audio>
+
+<script>
+    RxMorse.init({}, "pad", "ticker", "speaker", "text", "button");
+</script>
