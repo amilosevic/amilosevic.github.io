@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-order: 20
+order: 30
 title: Rx Uvod
 ---
 

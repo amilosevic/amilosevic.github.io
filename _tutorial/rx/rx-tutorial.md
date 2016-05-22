@@ -1,7 +1,7 @@
 ---
 layout: tutorial
 order: 10
-title: Rx Index
+title: Rx Abstract
 ---
 
 # Tutorijal asinhrono programiranje u Javi 
