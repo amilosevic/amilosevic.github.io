@@ -4,22 +4,10 @@ layout: default
 {% include base.html %}
 <div class="home">
 
- //{{ base }}//
+ <h1>RxJava / RxJS</h1>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ base }}{{ post.url }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!-- p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
+ <ul>
+   <li> <a href="{{base}}/tutorial/rx/index.html"> Rx Tutorial</a> (sample structure)
+ <ul>
 
 </div>

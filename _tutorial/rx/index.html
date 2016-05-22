@@ -1,0 +1,17 @@
+---
+layout: tutorial
+title: Content
+---
+{% include base.html %}
+
+<h1> Index </h1>
+
+<ul class="post-list">
+ {% assign chapters = site.tutorial | sort: 'order' %}
+
+ {% for rx in chapters %}
+   {% if rx.order  %}
+   <li> <a href="{{ base }}{{ rx.url }}">{{ rx.title }} / {{ rx.order }}</a></li>
+   {% endif %}
+ {% endfor %}
+</ul>
