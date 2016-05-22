@@ -1,5 +1,0 @@
----
-layout: tutorial
----
-
-# Rx Content
