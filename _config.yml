@@ -10,6 +10,9 @@ url: "http://amilosevic.github.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+gems:
+  - jekyll-gist
+
 # Build settings
 markdown: kramdown
 
