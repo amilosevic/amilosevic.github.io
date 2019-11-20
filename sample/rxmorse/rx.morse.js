@@ -350,7 +350,7 @@ RxMorse = (function () {
                 }
             }).publish();
 
-        if (false) {
+        if (true) {
             source.subscribe(function (x) {
                 if (x == 'down') {
                     speaker.currentTime = 0;
